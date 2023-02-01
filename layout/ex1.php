@@ -50,7 +50,7 @@
  ?>
 
  <h3> 4 Screenshot of the development environment</h3>
- <img src="" alt="">
+ <img src="Images/Screenshot1.png" alt="Screenshot of the development environment" width="50%">
 
 
 <?php include "footer.php" ?>
