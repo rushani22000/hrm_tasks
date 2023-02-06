@@ -10,6 +10,7 @@
 <style>
   a, .nav-link,.navbar-brand {
     color: white;
+    
 }
     </style>
 </head>
