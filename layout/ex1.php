@@ -39,7 +39,7 @@
  </tr>
 
  <tr>
- <td> 2.2 </td> <td> Johanna test </td> <td> $g2 </td>
+ <td> 2 </td> <td> Johanna  </td> <td> $g2 </td>
  </tr>
 
  <tr>
