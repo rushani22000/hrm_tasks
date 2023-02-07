@@ -87,18 +87,9 @@
 <br>
 <h5>3.6 Write a PHP script to detect the browser being used to view your pages. 
     (Use predefined variables: $_SERVER).</h5>
+
     <?php
-echo $_SERVER['PHP_SELF'];
-echo "<br>";
-echo $_SERVER['SERVER_NAME'];
-echo "<br>";
-echo $_SERVER['HTTP_HOST'];
-echo "<br>";
-echo $_SERVER['HTTP_REFERER'];
-echo "<br>";
-echo $_SERVER['HTTP_USER_AGENT'];
-echo "<br>";
-echo $_SERVER['SCRIPT_NAME'];
+    echo "Your User Agent is :" . $_SERVER ['HTTP_USER_AGENT'];
 ?>
 
 
