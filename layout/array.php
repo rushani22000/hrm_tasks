@@ -1,5 +1,5 @@
 <?php include "header.php" ?>
-
+<br>
 <form action=""  method="GET">
     <input type="number" placeholder="Enter your first number" name="num1" required>
     <input type="number" placeholder="Enter your second number" name="num2" required>
@@ -39,4 +39,30 @@ if (isset($result)){
     echo "<h2> Result: $result</h2>";
 }
 ?>
+<br>
+<h5> 5.1 Write a php script to display courses as list. </h5>
+<?php 
+    $courses=array("PHP", "HTML", "JavaScript", "CMS", "Project"); 
+
+    foreach ($courses as $value) {
+    echo "<li>".$value . "</li>";
+}
+?>
+<br>
+<h5>5.2 The unset() function is used to remove element from the array. The var_dump() 
+    function is used to dump information about a variable.  array_values() is an inbuilt
+     function that returns all the values of an array and not the keys.
+</h5>
+
+<?php 
+$courses1=array("PHP", "HTML", "JavaScript", "CMS", "Project");
+
+unset($courses1["2"]);
+var_dump($courses1);
+print_r(array_values($courses1));
+?>
+
+
+
+
 <?php include "footer.php" ?>
