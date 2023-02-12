@@ -54,7 +54,7 @@ if (isset($result)){
      function that returns all the values of an array and not the keys.
 </h5> 
 
-<?php /*
+<?php 
 $courses1=array("PHP", "HTML", "JavaScript", "CMS", "Project");
 
 unset($courses1["2"]);
@@ -84,8 +84,61 @@ $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
     foreach ($courses3 as $value) {
     echo $value . "<br>";}
     
-*/
+
 ?>
+<br>
+<h5> 5.4 Change the following array's all values to upper case.
+ $courses4=array("php", "html", "javascript", "cms", "project");
+ </h5>
+ 
+<?php
+$courses=array("php", "html", "javascript", "cms", "project");
+print_r( array_change_key_case($courses,CASE_UPPER));
+?>
+
+
+<br>
+<h5> 5.5 List all your favorite colors and their hexadecimal equivalents. (associative arrays) </h5>
+
+<?php 
+    
+    $color['#ffc0cb'] = "Pink";
+    $color['#008000'] = "Green";
+    $color['#ff0000'] = "Red";
+    $color['#0000ff'] = "Blue";
+    
+    foreach ($color as $x=>$x_values) {
+        echo $x . " => ".$x_values."<br>";}
+
+?>
+<br>
+<h5> 5.6 PHP script to calculate and display average temperature, five lowest and highest temperatures. </h5>
+<br>
+<?php
+    $a=array(78, 60, 62, 68, 71, 68, 73,
+    85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 
+    74, 62, 62, 65, 64, 68, 73, 75, 79, 73
+    );
+
+    
+    $sum=array_sum($a);
+    $count=count($a);
+    echo "Average temperature : ".$sum/$count;
+
+    
+    sort($a);
+
+    for ($i=0; $i < 5; $i++) {
+        echo $a[$i] . "<br>";}
+
+    
+    rsort($a);
+
+    for ($i=0; $i < 5; $i++) {
+        echo $a[$i] ."<br>";}
+
+?>
+
 
 
 
