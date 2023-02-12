@@ -61,6 +61,31 @@ unset($courses1["2"]);
 var_dump($courses1);
 print_r(array_values($courses1));
 ?>
+<br>
+<h5> 5.3 Sort the following array 
+$courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
+ </h5>
+ <?php 
+    
+    $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
+    sort($courses3);
+    foreach ($courses3 as $value) {
+    echo $value . "<br>";}
+
+    
+    $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
+    ksort($courses3);
+    foreach ($courses3 as $value) {
+    echo $value . "<br>";}
+
+   
+    $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
+    krsort($courses3);
+    foreach ($courses3 as $value) {
+    echo $value . "<br>";}
+    
+
+?>
 
 
 
