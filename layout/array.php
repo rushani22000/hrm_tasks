@@ -8,7 +8,7 @@
         <option value="sub">Subract</option>
         <option value="mul">Multiply</option>
         <option value="div">Divide</option>
-    </select>
+    </select>    
     <input type="submit" name="cal"  value="Calculate">
 </form>
 
@@ -49,10 +49,10 @@ if (isset($result)){
 }
 ?>
 <br>
-<!-- <h5>5.2 The unset() function is used to remove element from the array. The var_dump() 
+<h5>5.2 The unset() function is used to remove element from the array. The var_dump() 
     function is used to dump information about a variable.  array_values() is an inbuilt
      function that returns all the values of an array and not the keys.
-</h5> -->
+</h5> 
 
 <?php /*
 $courses1=array("PHP", "HTML", "JavaScript", "CMS", "Project");
