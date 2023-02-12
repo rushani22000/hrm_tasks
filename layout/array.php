@@ -49,19 +49,19 @@ if (isset($result)){
 }
 ?>
 <br>
-<h5>5.2 The unset() function is used to remove element from the array. The var_dump() 
+<!-- <h5>5.2 The unset() function is used to remove element from the array. The var_dump() 
     function is used to dump information about a variable.  array_values() is an inbuilt
      function that returns all the values of an array and not the keys.
-</h5>
+</h5> -->
 
-<?php 
+<?php /*
 $courses1=array("PHP", "HTML", "JavaScript", "CMS", "Project");
 
 unset($courses1["2"]);
 var_dump($courses1);
 print_r(array_values($courses1));
 ?>
-<br>
+
 <h5> 5.3 Sort the following array 
 $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
  </h5>
@@ -84,7 +84,7 @@ $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
     foreach ($courses3 as $value) {
     echo $value . "<br>";}
     
-
+*/
 ?>
 
 
