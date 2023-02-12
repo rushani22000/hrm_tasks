@@ -46,9 +46,67 @@ elseif ($score > 50)
     }  
 elseif ($score < 50) 
     {
-    echo "Fail ";
+    echo "Fail";
 }
 ?>
+
+<h3>3.4 Write a program to get inputs (age and name) from the user and based on their age, decide if he/she is eligible for voting. (18 or more than 18 years is eligible for voting,)</h3>
+<br>
+
+<?php
+function check_vote() {
+    $name = "Name";
+    $age = 00;
+    if ($age >= 18) {
+        echo $name . ", You Are Eligible For Vote";
+    } else {
+        echo $name . ", You are not eligible for vote. ";
+    }
+}
+check_vote();
+
+?>
+
+<h3>In task 5, you used $_SERVER['HTTP_USER_AGENT']; to get the browser name. 
+Use Switch statement with strops function to print the name of the browser as below: 
+If someone is using Chrome it should print, you are using Goolge Chrome….</h3>
+<br>
+<?php
+
+ function getBrowser()
+ {
+   $user_agent = $_SERVER['HTTP_USER_AGENT'];
+   $browser = "N/A";
+
+   $browsers = [
+     '/msie/i' => 'Internet explorer',
+     '/firefox/i' => 'Firefox',
+     '/safari/i' => 'Safari',
+     '/chrome/i' => 'Chrome',
+     '/edge/i' => 'Edge',
+     '/opera/i' => 'Opera',
+     '/mobile/i' => 'Mobile browser',
+   ];
+
+
+   foreach ($browsers as $regex => $value) 
+{
+     if (preg_match($regex, $user_agent)) 
+{
+       $browser = $value;
+     }
+   }
+   return $browser;
+
+ }
+
+ echo "You are using: " . getBrowser();
+
+?>
+
+
+
+
 
 
 
